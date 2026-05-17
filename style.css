@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) ,
+    url("images/back.jpg");
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8));
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.logo img{
+    width: 5rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    justify-content: space-between;
+    margin: 1rem 5%;
+    padding: 1rem 2rem;
+    font-size: 50%;
+    border-radius: 0.5rem;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; 
+    padding: 0.5rem 1rem;  
+    
+}
+
+nav a:hover{
+    color: rgb(19, 165, 219);
+    transition: 0.3s ease;
+    border-radius: 3rem;
+    background:linear-gradient(rgb(32, 133, 172));
+}
+
+.nav-action {
+    margin-left: 1rem;
+
+}
+
+ .btn{
+    text-decoration:none;
+    color:#fff;
+    padding: 0.2em;
+    background-color: #0fe1e1;
+    border-radius: 1.2em;
+   
+    
+}
+.btn:hover{
+    background: rgb(232, 7, 7);
+    box-shadow: 0 0 1rem rgb(10, 219, 247);
+    
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 5%;
+    border-radius: 3rem;
+    padding:  2rem;
+    background: linear-gradient(135deg, #000000, #0f2027, #2c5364);
+}
+
+.hero-image img{
+    width: 100%;
+    border-radius: 3rem;
+    height: 100%;
+    object-fit:cover;
+    padding-top: 0;
+    margin-top: 0;  
+}
+
+.hero-image{
+    width: 45%;
+    height: 100%;
+}
+
+.hero-content{
+    width: 50%;
+    text-align:justify;
+    margin-left:8rem;
+    align-items:center;
+}
+
+.hero-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height:1.2 ;
+    align-items: justify;
+    color:red;
+    text-align: justify;
+}
+
+.hero-content a{
+    gap:10rem;
+    text-align: bottom;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    color:#fff;
+    line-height: 1.5;
+}
+.service-card{
+    display: inline-block;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 28%;
+    padding: 2rem;
+    background: linear-gradient(145deg, #121212, #0f1c2e);
+    border-radius: 1rem;
+    margin:1rem;
+    text-align: justify;
+    transition: 0.3s ease; 
+    color: white;
+    list-style: none; 
+    border: 0.1rem solid #0fe1e1;
+
+}
+
+.service-card img{
+    width: 95%;
+    height: 12.5rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    
+}
+
+
+.service-card:hover {
+    transform: translateY(-0.5rem);
+}
+
+.container{
+    margin: 2rem 5%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.container h2,h1,h3,h4,h5,h6{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    color: #fff;
+   
+}
+
+.container h3 p{
+    color: black;
+}
+
+.container p{
+    color: white;
+    text-align: center;
+
+}
+.container a{
+    gap:10rem;
+    text-align: bottom;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin:2rem 5%;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #000000, #0f2027, #2c5364);
+    
+}
+
+.about-image{
+    width: 50%;
+}
+
+.about-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border:1rem 1rem 1rem 1rem;
+    border-radius: 2rem;
+}
+
+.about-content{
+    width: 45%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: justify;
+    background:#ffffff;
+}
+
+.about-content h1{
+    margin-bottom: 1rem;
+    color: lightseagreen;
+
+}
+
+.about-content ul{
+    margin-bottom: 1rem;
+    padding-left: 1.2rem;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.team-container{
+    margin: 2rem 5%;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    flex-wrap: wrap;
+    background: linear-gradient(145deg, #121212, #0f1c2e);
+    color: #fff;
+    
+}
+
+.box-grid,.box-card{
+    max-width: 25rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(145deg, #121212, #0f1c2e);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.box-grid ul{
+    list-style:none;
+    gap: 0.3rem;
+    padding: top 0; 
+    margin-top:0 ;
+    color: #fff;
+    text-align:left;
+    align-items: left;
+}
+
+.box-grid p{
+    text-align: left;
+}
+
+
+.register-container {
+    max-width: 25rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f5f5f5;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+
+.services{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.services p{
+    color: #fff;
+}
+
+
+.services input[type="radio"]{
+    display: none;
+}
+
+.service-box{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #121212;
+    color: #fff;
+    border: 0.1rem solid #0fe1e1;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.services h1{
+    text-align: center;
+}
+
+
+.service-box:hover{
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0 1rem #0fe1e1;
+}
+
+input[type="radio"]:checked + .service-box{
+    background: #0fe1e1;
+    color: #000;
+    box-shadow: 0 0 1rem #0fe1e1;
+}
+
+.grid{
+    margin: 2rem 5%;
+    padding: 2rem;
+    background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 2rem;
+    color: white;
+}
+
+.text-box{
+    text-align: center;
+    color: white;
+}
+
+.rating{
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: none;
+    width: 40%;
+    margin-top: 1rem;
+    background: #121212;
+    color: rgb(7, 29, 196);
+    text-align: center;
+    
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    background: rgb(6, 32, 201);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right:2rem;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+   
+    
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1rem rgb(9, 166, 234);
+}
+
+
+  .rate-button{
+    display: flex;
+    justify-content: center;  
+    margin: 0 auto;            
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 25%;
+}
+
+.register-container h1{
+    color: #000;
+}
+
+.social-media {
+    display: inline-block;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.social-link img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+
+.social-media p{
+    margin-bottom: 0.5rem;
+}
+
+.social-media img{
+    display: inline-block;
+}
+
+
+@media (max-width: 85em) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .service-card {
+        width: 90%;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box-grid {
+        width: 90%;
+    }
+
+    .box-card {
+        width: 90%;
+    }
+
+    .register-container {
+        width: 90%;
+    }
+
+    .rating {
+        width: 80%;
+    }
+
+    .rate-button {
+        width: 70%;
+    }
+
+}
+
+
+@media (min-width: 85em) {
+
+    .hero {
+        margin: 3rem 10%;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .service-card {
+        width: 25%;
+    }
+
+    .about {
+        margin: 3rem 10%;
+    }
+
+}

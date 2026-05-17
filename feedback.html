@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback-Kentse Fitness</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    
+        <div class="logo">
+         <img src="images/gab.png" alt="Kentse Fitness Logo">
+        </div>
+
+        <nav>
+         <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="registration.html">Registration</a>
+
+
+     <div class="nav-action">
+        <a href="registration.html" class="btn">Join Us</a>
+     </div>
+    
+    </nav>
+    </header>
+
+    <main>
+        <section class="grid">
+            <div class="text-box">
+                <h1>TELL US ABOUT YOUR EXPERIENCE AT KENTSE FITNESS</h1>
+            
+                <form>
+
+                    <p>Which services did you use</p>
+
+    <div class="services">
+            <input type="radio" name="service" id="gym" hidden>
+                <label for="gym" class="service-box">GYM TRAINING</label>
+
+                <input type="radio" name="service" id="strength" hidden>
+                <label for="strength" class="service-box">STRENGTH TRAINING</label>
+
+                <input type="radio" name="service" id="nutrition" hidden>
+                <label for="nutrition" class="service-box">NUTRITION</label>
+            </div>
+                </form>
+        <P>Rate Kentse Fitness services</p>
+
+           <select class="rating">
+              <option value="select">Select Rating</option>
+              <option value="1">Poor</option>
+              <option value="2">Good</option>
+              <option value="3">Average</option>
+              <option value="4">Excellent</option>
+           </select>
+
+           <div class="rate-button">
+             <button type="submit">Send</button>
+               </div>
+               </div>
+               
+        </section>
+
+    </main>
+<footer>
+        <div class="footer-content">
+
+            <div class="contact-info">
+                <p>CONTACT US</p>
+                    <p>+26778793022</p>
+                <p>Email:Kentsefitness@gmail.com</p>
+            </div>
+            
+            <div class="social-media">
+                        <p>FOLLOW US</p>
+                     <a href="https://facebook.com" target="_blank" class="social-link">
+                   <img src="images/fb.webp" alt="Facebook Icon"  width="20" height="20">
+                     </a>
+                     <a href="https://twitter.com" target="_blank" class="social-link ">
+                     <img src="images/twitter.png" alt="Twitter Icon" width="20" height="20">
+                     </a>
+                       <a href="https://instagram.com" target="_blank" class="social-link">
+                        <img src="images/IG.png" alt="Instagram Icon" width="20" height="20"> 
+                       </a> 
+                       <a href="https://whatsapp.com" target="_blank" class="social-link">
+                        <img src="images/whatsapp.png" alt="WhatsApp Icon" width="20" height="20">
+                       </a>
+              
+            </div>
+            </div>
+            <p>@2026 Kentse Fitness. All rights reserved.</p> 
+     </footer>
+
+
+      
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+    var form = document.querySelector("form");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        
+        var service = document.querySelector('input[name="service"]:checked');
+
+        
+        var rating = document.querySelector(".rating").value;
+
+        if (!service) {
+            alert("Please select a service you used");
+            return;
+        }
+
+        if (rating === "--" || rating === "") {
+            alert("Please rate our services");
+            return;
+        }
+
+        alert("Thank you for your feedback");
+        form.reset();
+    });
+
+});
+     </script> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

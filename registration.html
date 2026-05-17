@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration-Kentse Fitness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    
+        <div class="logo">
+         <img src="images/gab.png" alt="Kentse Fitness Logo">
+        </div>
+
+        <nav>
+         <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="registration.html">Registration</a>
+
+     <div class="nav-action">
+        <a href="registration.html" class="btn">Join Us</a>
+     </div>
+    
+    </nav>
+    </header>
+      
+    <main>
+        <div class="col-md-6">
+            <div class="register-container">
+                <h1>Register</h1>
+
+                 <form id="registerForm" class="containerForm">
+
+                    <div class="mb-5">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your Full Name" required>
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="form-label">Email</label>
+                        <input type="text" class="form-control" placeholder="Enter your Email" required>
+                    </div>
+                    <div class="mb-5">
+                        <label class="form-label"> Age</label>
+                        <input type="text" class="form-control" placeholder="Enter your age" required>
+                    </div>
+                    <div class="mb-5">
+                        <label class="form-label">Phone</label>
+                        <input type="tel" class="form-control" placeholder="Enter your Phone Number" required>
+                    </div>
+                    <div class="mb-5">
+                        <label class="form-label">Plan</label>
+                        <select required>
+                             <option value="">Choose a plan</option>
+                             <option>Basic</option>
+                             <option>Standard</option>
+                             <option>Premium</option>
+                        </select>
+                    </div>
+                      <button type="submit">Submit</button> 
+                 </form>   
+                </div>
+               </div>
+          
+            </main> 
+             <footer>
+        <div class="footer-content">
+
+            <div class="contact-info">
+                <p>CONTACT US</p>
+                    <p>+26778793022</p>
+                <p>Email:Kentsefitness@gmail.com</p>
+            </div>
+            
+            <div class="social-media">
+                     <a href="https://facebook.com" target="_blank" class="social-link">
+                   <img src="images/fb.webp" alt="Facebook Icon"  width="20" height="20">
+                     </a>
+                     <a href="https://twitter.com" target="_blank" class="social-link ">
+                     <img src="images/twitter.png" alt="Twitter Icon" width="20" height="20">
+                     </a>
+                       <a href="https://instagram.com" target="_blank" class="social-link">
+                        <img src="images/IG.png" alt="Instagram Icon" width="20" height="20"> 
+                       </a> 
+                       <a href="https://whatsapp.com" target="_blank" class="social-link">
+                        <img src="images/whatsapp.png" alt="WhatsApp Icon" width="20" height="20">
+                       </a>
+              
+            </div>
+            </div>
+            <p>@2026 Kentse Fitness. All rights reserved.</p> 
+     </footer>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("registerForm");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // stops page refresh
+
+        const name = form.querySelector('input[type="text"]').value.trim();
+        const email = form.querySelectorAll('input[type="text"]')[1].value.trim();
+        const age = form.querySelectorAll('input[type="text"]')[2].value.trim();
+        const phone = form.querySelector('input[type="tel"]').value.trim();
+        const plan = form.querySelector('select').value;
+
+        if (!name || !email || !age || !phone || !plan) {
+            alert("Please fill all fields");
+            return;
+        }
+
+        alert("Thank you for registering with Kentse Fitness!");
+
+        form.reset();
+    });
+
+});
+    </script>
+    
+</body>
+</html>
